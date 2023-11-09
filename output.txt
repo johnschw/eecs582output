@@ -1,0 +1,531 @@
+Running ghOSt experiments...
+Output Directory: /tmp/ghost_data/2023-11-09 23:19:49
+{"throughputs": [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 141000, 142000, 143000, 144000, 145000, 146000, 147000, 148000, 149000, 150000], "output_prefix": "/tmp/ghost_data/2023-11-09 23:19:49", "binaries": {"rocksdb": "/dev/shm/rocksdb", "antagonist": "/dev/shm/antagonist", "ghost": "/dev/shm/agent_shinjuku"}, "rocksdb": {"print_format": "csv", "print_distribution": false, "print_ns": false, "print_get": true, "print_range": true, "rocksdb_db_path": "/dev/shm/orch_db", "throughput": 20000, "range_query_ratio": 0.005, "load_generator_cpus": 10, "cfs_dispatcher_cpus": 11, "num_workers": 200, "worker_cpus": [], "cfs_wait_type": "spin", "ghost_wait_type": "prio_table", "get_duration": "10us", "range_duration": "5000us", "get_exponential_mean": "0us", "batch": 1, "experiment_duration": "15s", "discard_duration": "2s", "scheduler": "ghost", "ghost_qos": 2}, "antagonist": null, "ghost": {"firstcpu": 11, "globalcpu": 11, "ncpus": 7, "preemption_time_slice": "30us"}}
+Running experiment for throughput = 10000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '10000']
+RocksDB Stats:
+Get:
+129743,9979,0,0,890,4925,9662,13264
+129743,9979,0,0,2,3,5,184
+129743,9979,0,63,2690,3171,4100,17270
+129743,9979,10,12,926,1398,2358,17203
+129743,9979,11,89,3830,7354,13100,17284
+Range:
+686,52,0,0,1289,3121,8797,9352
+686,52,0,0,2,2,3,3
+686,52,0,63,2491,2654,3639,8697
+686,52,5001,5075,8209,8786,12197,13331
+686,52,5002,5194,11715,14615,15759,16329
+All:
+130429,10032,0,0,890,4925,9659,13264
+130429,10032,0,0,2,3,5,184
+130429,10032,0,63,2687,3170,4100,17270
+130429,10032,10,12,1439,5001,5975,17203
+130429,10032,11,90,5153,7590,13198,17284
+Running experiment for throughput = 20000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '20000']
+RocksDB Stats:
+Get:
+258878,19913,0,0,3869,8409,12703,15191
+258878,19913,0,0,3,3,3,878
+258878,19913,0,42,3487,4421,6724,20355
+258878,19913,10,12,675,1176,2467,20840
+258878,19913,11,69,5940,12409,18191,22972
+Range:
+1325,101,0,0,6130,9810,14188,15003
+1325,101,0,0,3,3,3,5
+1325,101,0,39,3519,5005,6364,6904
+1325,101,5001,5226,9972,15005,23492,24329
+1325,101,5002,5369,17718,22169,25724,25975
+All:
+260203,20014,0,0,3872,8420,12704,15191
+260203,20014,0,0,3,3,3,878
+260203,20014,0,42,3490,4426,6724,20355
+260203,20014,10,12,1186,5002,6200,24329
+260203,20014,11,69,6831,12481,18261,25975
+Running experiment for throughput = 30000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '30000']
+RocksDB Stats:
+Get:
+387689,29820,0,0,4568,8460,12728,15618
+387689,29820,0,0,3,3,3,312
+387689,29820,0,29,3972,5052,14270,43222
+387689,29820,10,12,464,866,2426,42222
+387689,29820,11,59,6634,12796,20832,43235
+Range:
+2009,154,0,0,994,6961,11162,13721
+2009,154,0,0,3,3,3,76
+2009,154,0,28,3787,4784,14037,36945
+2009,154,5001,5363,11845,19676,46830,48131
+2009,154,5002,5441,19677,23672,46900,49586
+All:
+389698,29975,0,0,4552,8458,12722,15618
+389698,29975,0,0,3,3,3,312
+389698,29975,0,29,3971,5051,14255,43222
+389698,29975,10,12,890,5002,6492,48131
+389698,29975,11,59,7073,12904,21026,49586
+Running experiment for throughput = 40000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '40000']
+RocksDB Stats:
+Get:
+517752,39826,0,0,7809,12170,15954,18305
+517752,39826,0,0,3,3,3,521
+517752,39826,0,27,3807,5773,14241,71942
+517752,39826,10,12,267,463,1984,30928
+517752,39826,11,57,9005,13661,28512,71956
+Range:
+2594,199,0,0,4694,11366,15570,17349
+2594,199,0,0,3,3,3,4
+2594,199,0,26,3524,4761,10560,22172
+2594,199,5001,6979,34610,44318,84284,91140
+2594,199,5003,7059,38369,58573,84959,93450
+All:
+520346,40026,0,0,7800,12170,15954,18305
+520346,40026,0,0,3,3,3,521
+520346,40026,0,27,3805,5772,14236,71942
+520346,40026,10,12,460,5082,9761,91140
+520346,40026,11,58,9757,14409,29046,93450
+Running experiment for throughput = 50000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '50000']
+RocksDB Stats:
+Get:
+646587,49736,0,1,8998,13163,18805,28430
+646587,49736,0,0,3,3,4,1112
+646587,49736,0,1,2872,5947,31180,77084
+646587,49736,11,12,221,345,1146,64693
+646587,49736,11,62,9947,15668,45877,77209
+Range:
+3261,250,0,1,9245,14331,22703,27928
+3261,250,0,0,3,3,4,27
+3261,250,0,0,3145,7220,28106,34349
+3261,250,5001,6573,27406,40005,70075,84242
+3261,250,5003,6636,37891,52338,75147,84243
+All:
+649848,49987,0,1,8996,13166,18814,28430
+649848,49987,0,0,3,3,4,1112
+649848,49987,0,1,2872,5945,31149,77084
+649848,49987,11,12,344,5302,9797,84242
+649848,49987,11,62,10598,16430,46325,84243
+Running experiment for throughput = 60000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '60000']
+RocksDB Stats:
+Get:
+776145,59700,0,0,4720,7873,11150,15215
+776145,59700,0,0,3,3,4,10573
+776145,59700,0,0,8379,25805,222269,6202913
+776145,59700,11,12,614,1220,7565,7364735
+776145,59700,11,70,11333,31226,257442,7364737
+Range:
+3976,305,0,0,3997,7242,11119,12702
+3976,305,0,0,3,3,4,46
+3976,305,0,0,6692,16427,130419,1578813
+3976,305,5001,25244,1178194,3702654,7355852,7375802
+3976,305,5002,25773,1178268,3702758,7355906,7375845
+All:
+780121,60006,0,0,4719,7869,11150,15215
+780121,60006,0,0,3,3,4,10573
+780121,60006,0,0,8373,25766,222269,6202913
+780121,60006,11,13,1234,17463,89496,7375802
+780121,60006,11,70,20601,45910,344740,7375845
+Running experiment for throughput = 70000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '70000']
+RocksDB Stats:
+Get:
+906786,69751,0,0,5676,8963,13566,17677
+906786,69751,0,0,3,3,3,16120
+906786,69751,0,0,11455,39467,172561,2485273
+906786,69751,11,12,641,1275,9168,2483871
+906786,69751,11,67,14991,45032,195418,2485308
+Range:
+4555,350,0,0,6311,8668,14115,16051
+4555,350,0,0,3,3,4,29
+4555,350,0,0,9035,28105,128757,732730
+4555,350,5001,17838,730300,1201044,2233523,2511483
+4555,350,5002,18376,731888,1201046,2233525,2511484
+All:
+911341,70101,0,0,5681,8963,13568,17677
+911341,70101,0,0,3,3,3,16120
+911341,70101,0,0,11443,39461,172561,2485273
+911341,70101,11,12,1266,12762,58216,2511483
+911341,70101,11,67,21676,54440,213296,2511484
+Running experiment for throughput = 80000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '80000']
+RocksDB Stats:
+Get:
+931579,71647,0,1600,1292696,1295798,1301657,1303662
+931579,71647,0,0,3,4,4,2609
+931579,71647,0,0,405,4022,31487,7574655
+931579,71647,11,12,386,761,5009,7566912
+931579,71647,11,1691,1292840,1296094,1302356,7575028
+Range:
+4750,365,0,1729,1292002,1295634,1300901,1301828
+4750,365,0,0,4,4,4,64
+4750,365,0,0,179,2013,23092,1954647
+4750,365,5002,20145,892092,1822689,3642573,8065408
+4750,365,7742,25261,1599797,1995316,3787783,8065412
+All:
+936329,72013,0,1600,1292693,1295798,1301652,1303662
+936329,72013,0,0,3,4,4,2609
+936329,72013,0,0,403,3997,31349,7574655
+936329,72013,11,12,769,15047,44954,8065408
+936329,72013,11,1742,1292880,1296304,1302573,8065412
+Running experiment for throughput = 90000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '90000']
+RocksDB Stats:
+Get:
+998013,76767,1733538,2425421,2898871,2905758,2910753,2914308
+998013,76767,0,0,3,4,4,21441
+998013,76767,0,0,1873,11564,83884,1838223
+998013,76767,11,12,360,746,4467,843456
+998013,76767,1733552,2425571,2899548,2907769,2911842,4752544
+Range:
+4891,376,1737151,2422611,2901194,2907878,2911357,2912735
+4891,376,0,0,4,4,4,32
+4891,376,0,0,2140,9681,26246,695854
+4891,376,5002,15854,842572,1714476,5725357,7811099
+4891,376,1752486,2448272,3298802,4354617,8633072,10266993
+All:
+1002904,77143,1733538,2425405,2898874,2905782,2910754,2914308
+1002904,77143,0,0,3,4,4,21441
+1002904,77143,0,0,1873,11552,83681,1838223
+1002904,77143,11,12,717,9572,34679,7811099
+1002904,77143,1733552,2425628,2899671,2908048,2912303,10266993
+Running experiment for throughput = 100000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '100000']
+RocksDB Stats:
+Get:
+997554,76732,241882,1866134,2968260,2970492,2973620,2975286
+997554,76732,0,0,4,4,4,5032
+997554,76732,0,0,17,155,14738,4690741
+997554,76732,11,12,296,499,2219,10276484
+997554,76732,241895,1866214,2968324,2970547,2973687,11192858
+Range:
+5094,391,241957,1862485,2965326,2968318,2973282,2974759
+5094,391,0,0,4,4,4,707
+5094,391,0,0,21,110,8072,20585
+5094,391,6971,21042,10182199,10408887,10541180,10630728
+5094,391,259349,1950359,11139309,11309234,11431395,11500427
+All:
+1002648,77124,241882,1866109,2968255,2970488,2973620,2975286
+1002648,77124,0,0,4,4,4,5032
+1002648,77124,0,0,17,155,14720,4690741
+1002648,77124,11,12,504,15680,35127,10630728
+1002648,77124,241895,1866580,2968443,2970724,2974119,11500427
+Running experiment for throughput = 110000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '110000']
+RocksDB Stats:
+Get:
+1266688,97436,218933,739042,1380745,1407391,1420449,1431470
+1266688,97436,0,0,4,4,4,3660
+1266688,97436,0,0,15,40,1691,10328538
+1266688,97436,11,12,237,363,1596,720025
+1266688,97436,218946,739111,1380833,1407495,1420748,10706376
+Range:
+6412,493,218964,737858,1375395,1404018,1418880,1429454
+6412,493,0,0,4,4,4,31
+6412,493,0,0,15,30,927,15149
+6412,493,5002,15742,459595,928749,6284594,10430272
+6412,493,226145,760184,1454820,1788937,7029374,10804487
+All:
+1273100,97930,218933,739037,1380645,1407372,1420445,1431470
+1273100,97930,0,0,4,4,4,3660
+1273100,97930,0,0,15,40,1691,10328538
+1273100,97930,11,12,363,10901,25957,10430272
+1273100,97930,218946,739194,1381065,1407722,1420829,10804487
+Running experiment for throughput = 120000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '120000']
+RocksDB Stats:
+Get:
+1005146,77283,924619,2850503,4541196,4573772,4583805,4584797
+1005146,77283,0,0,4,4,4,2548
+1005146,77283,0,0,14,17,153,9062026
+1005146,77283,11,12,233,360,1636,815956
+1005146,77283,924632,2850547,4541376,4573804,4583831,10276737
+Range:
+4935,379,925731,2833159,4549229,4574177,4583704,4584505
+4935,379,0,0,4,4,4,68
+4935,379,0,0,15,35,255,23769
+4935,379,5001,20288,367741,720509,4904695,11731488
+4935,379,941629,2865268,4591350,4629372,6473596,12892518
+All:
+1010081,77662,924619,2850419,4541369,4573774,4583805,4584797
+1010081,77662,0,0,4,4,4,2548
+1010081,77662,0,0,14,17,154,9062026
+1010081,77662,11,12,353,8734,27092,11731488
+1010081,77662,924632,2850741,4541978,4573836,4583889,12892518
+Running experiment for throughput = 130000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '130000']
+RocksDB Stats:
+Get:
+1240849,95447,652976,2285934,3395002,3400391,3409766,3411260
+1240849,95447,0,0,4,4,4,3141
+1240849,95447,0,0,15,27,328,3911434
+1240849,95447,11,12,232,354,1430,813753
+1240849,95447,652991,2286033,3395045,3400424,3409813,5474012
+Range:
+6279,482,653013,2267435,3394032,3399863,3409285,3411051
+6279,482,0,0,4,4,4,114
+6279,482,0,0,15,41,785,91524
+6279,482,5001,15493,425336,845506,4965940,9466010
+6279,482,667959,2300715,3429955,3549270,7440632,10872224
+All:
+1247128,95930,652976,2285862,3395000,3400388,3409762,3411260
+1247128,95930,0,0,4,4,4,3141
+1247128,95930,0,0,15,27,328,3911434
+1247128,95930,11,12,354,10977,23134,9466010
+1247128,95930,652991,2286103,3395078,3400453,3409988,10872224
+Running experiment for throughput = 140000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '140000']
+RocksDB Stats:
+Get:
+971410,74721,1100584,3396205,5933971,5974152,6006670,6007155
+971410,74721,0,0,4,4,4,12871
+971410,74721,0,0,15,19,158,1622665
+971410,74721,11,13,256,396,1780,1352548
+971410,74721,1100604,3396278,5934006,5974190,6006715,6775391
+Range:
+4908,377,1101317,3440370,5942764,5974306,6004850,6007017
+4908,377,0,0,4,4,20,84
+4908,377,0,0,16,57,175,502
+4908,377,10017,20285,385005,711641,2594111,7704677
+4908,377,1120079,3477693,5985789,6016983,6877775,10534456
+All:
+976318,75099,1100584,3396385,5933973,5974155,6006668,6007155
+976318,75099,0,0,4,4,4,12871
+976318,75099,0,0,15,19,158,1622665
+976318,75099,11,13,396,14720,27537,7704677
+976318,75099,1100604,3396486,5934035,5974221,6006729,10534456
+Running experiment for throughput = 141000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '141000']
+RocksDB Stats:
+Get:
+1239352,95328,899411,2778980,4135148,4143926,4155411,4160188
+1239352,95328,0,0,4,4,4,3971
+1239352,95328,0,0,14,25,209,5513137
+1239352,95328,11,12,226,335,1495,788258
+1239352,95328,899424,2779011,4135233,4143960,4155440,8224691
+Range:
+6145,472,899640,2755001,4134219,4143749,4155310,4156737
+6145,472,0,0,4,4,4,68
+6145,472,0,0,15,22,207,14123
+6145,472,6437,15277,329122,604766,6776410,7733985
+6145,472,911345,2784121,4158243,4174031,9330773,10041395
+All:
+1245497,95801,899411,2778962,4135131,4143925,4155411,4160188
+1245497,95801,0,0,4,4,4,3971
+1245497,95801,0,0,14,25,209,5513137
+1245497,95801,11,12,331,9881,22042,7733985
+1245497,95801,899424,2779013,4135396,4143970,4155451,10041395
+Running experiment for throughput = 142000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '142000']
+RocksDB Stats:
+Get:
+995825,76600,1148195,3359856,5901691,5927683,5939256,5952858
+995825,76600,0,0,4,4,4,3697
+995825,76600,0,0,15,43,466,6458170
+995825,76600,11,12,251,390,1667,5796608
+995825,76600,1148208,3359917,5901765,5927786,5939298,9686513
+Range:
+4895,376,1148844,3424160,5901350,5925561,5939591,5951865
+4895,376,0,0,4,4,4,4
+4895,376,0,0,15,35,429,32063
+4895,376,5002,20742,439969,1069890,5629630,10198117
+4895,376,1164671,3476431,5948400,5970142,8927311,11929187
+All:
+1000720,76977,1148195,3359920,5901690,5927676,5939256,5952858
+1000720,76977,0,0,4,4,4,3697
+1000720,76977,0,0,15,43,462,6458170
+1000720,76977,11,12,384,8897,32559,10198117
+1000720,76977,1148208,3359978,5901814,5928060,5939323,11929187
+Running experiment for throughput = 143000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '143000']
+RocksDB Stats:
+Get:
+1176711,90514,983415,3012852,4704454,4723726,4730929,4734505
+1176711,90514,0,0,4,4,4,289
+1176711,90514,0,0,15,17,127,3013837
+1176711,90514,11,13,228,338,1399,822349
+1176711,90514,983429,3012916,4704487,4723890,4730976,6627945
+Range:
+6000,461,983476,3015767,4704058,4720897,4730338,4733783
+6000,461,0,0,4,4,4,29
+6000,461,0,0,14,17,118,1647
+6000,461,5002,15455,298769,725338,3538777,6846902
+6000,461,996897,3049225,4731089,4748105,6194261,8352485
+All:
+1182711,90975,983415,3012865,4704453,4723651,4730928,4734505
+1182711,90975,0,0,4,4,4,289
+1182711,90975,0,0,15,17,127,3013837
+1182711,90975,11,13,340,11376,20714,6846902
+1182711,90975,983429,3012965,4704513,4724862,4731034,8352485
+Running experiment for throughput = 144000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '144000']
+RocksDB Stats:
+Get:
+971882,74759,1256409,3692037,6157351,6186797,6194437,6208785
+971882,74759,0,0,4,4,4,19339
+971882,74759,0,0,14,17,134,1690049
+971882,74759,11,12,230,346,1427,678812
+971882,74759,1256422,3692328,6157383,6186825,6194499,6554789
+Range:
+4939,379,1256417,3694672,6156431,6186124,6201489,6206931
+4939,379,0,0,4,4,4,35
+4939,379,0,0,15,28,134,54217
+4939,379,10328,19980,442849,849745,6103442,6696985
+4939,379,1274930,3732760,6205409,6249170,9727867,10061640
+All:
+976821,75139,1256409,3692055,6157350,6186747,6194438,6208785
+976821,75139,0,0,4,4,4,19339
+976821,75139,0,0,14,17,134,1690049
+976821,75139,11,12,347,15299,26845,6696985
+976821,75139,1256422,3692982,6157400,6186980,6194518,10061640
+Running experiment for throughput = 145000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '145000']
+RocksDB Stats:
+Get:
+1142880,87913,987785,3250408,5044011,5057590,5076233,5093705
+1142880,87913,0,0,4,4,4,2475
+1142880,87913,0,0,15,18,136,2392786
+1142880,87913,11,13,247,383,1681,302472
+1142880,87913,987798,3250446,5044049,5057667,5076261,5318004
+Range:
+5778,444,987939,3222734,5044473,5058889,5076130,5077051
+5778,444,0,0,4,4,4,44
+5778,444,0,0,15,17,78,1485
+5778,444,6247,15994,395867,804329,4326600,11214589
+5778,444,1003582,3253330,5074160,5104746,7568245,12532916
+All:
+1148658,88357,987785,3250375,5044018,5057611,5076233,5093705
+1148658,88357,0,0,4,4,4,2475
+1148658,88357,0,0,15,18,136,2392786
+1148658,88357,11,13,384,11766,21217,11214589
+1148658,88357,987798,3250448,5044075,5057751,5076273,12532916
+Running experiment for throughput = 146000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '146000']
+RocksDB Stats:
+Get:
+909790,69985,1435412,4091862,6677189,6703499,6730659,6734101
+909790,69985,0,0,4,4,4,1008
+909790,69985,0,0,15,44,350,2162296
+909790,69985,11,13,284,451,1890,8773572
+909790,69985,1435429,4091948,6677234,6703553,6730699,11431165
+Range:
+4561,350,1435576,4110190,6678784,6706356,6730086,6733551
+4561,350,0,0,4,4,4,4
+4561,350,0,0,15,47,1938,829801
+4561,350,5734,21816,419295,1039716,5800059,8289811
+4561,350,1449418,4164936,6725247,6799070,9904032,11160804
+All:
+914351,70335,1435412,4091906,6677209,6703512,6730655,6734101
+914351,70335,0,0,4,4,4,1008
+914351,70335,0,0,15,44,365,2162296
+914351,70335,11,13,448,14026,33403,8773572
+914351,70335,1435429,4091977,6677279,6704756,6730775,11431165
+Running experiment for throughput = 147000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '147000']
+RocksDB Stats:
+Get:
+1231990,94442,620480,2456166,4541532,4561267,4614539,4618329
+1231990,94442,0,0,4,4,4,3453
+1231990,94442,0,0,15,18,155,5315107
+1231990,94442,11,12,230,343,1516,343149
+1231990,94442,620493,2456341,4541561,4561380,4614595,7062536
+Range:
+6248,478,620524,2447686,4540251,4557553,4613137,4618107
+6248,478,0,0,4,4,4,42
+6248,478,0,0,15,20,130,4349679
+6248,478,5002,15537,328429,625946,1664460,11472150
+6248,478,634265,2472559,4578703,4649871,5271837,12409712
+All:
+1238238,94921,620480,2456105,4541531,4561267,4614535,4618329
+1238238,94921,0,0,4,4,4,3453
+1238238,94921,0,0,15,18,154,5315107
+1238238,94921,11,12,345,10893,21353,11472150
+1238238,94921,620493,2456378,4541589,4561643,4614621,12409712
+Running experiment for throughput = 148000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '148000']
+RocksDB Stats:
+Get:
+888626,68357,1812240,4477946,6902207,6933224,6957758,6961973
+888626,68357,0,0,4,4,4,780
+888626,68357,0,0,15,23,151,623161
+888626,68357,11,12,290,468,1601,1435744
+888626,68357,1812252,4477989,6902295,6933249,6957789,7001825
+Range:
+4486,345,1812439,4516888,6912029,6934080,6955586,6959166
+4486,345,0,0,4,4,4,41
+4486,345,0,0,16,34,151,2176
+4486,345,7306,21133,364726,695034,4118120,9583959
+4486,345,1834576,4557491,6950731,7002631,7969937,12203068
+All:
+893112,68702,1812240,4478000,6902213,6933226,6957758,6961973
+893112,68702,0,0,4,4,4,780
+893112,68702,0,0,15,23,151,623161
+893112,68702,11,12,467,14912,27893,9583959
+893112,68702,1812252,4478039,6902688,6933279,6957815,12203068
+Running experiment for throughput = 149000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '149000']
+RocksDB Stats:
+Get:
+1157273,89018,794843,2599906,5147686,5168338,5185111,5188617
+1157273,89018,0,0,4,4,4,2558
+1157273,89018,0,0,16,47,683,815526
+1157273,89018,11,13,274,435,1724,3792484
+1157273,89018,794861,2600034,5147754,5168384,5185175,7547921
+Range:
+5881,452,794860,2673197,5141149,5167859,5183812,5188524
+5881,452,0,0,4,4,4,104
+5881,452,0,0,16,57,1550,388935
+5881,452,5002,16040,635558,1647631,3846026,4134331
+5881,452,809220,2701162,5193653,5417104,7562015,7702774
+All:
+1163154,89470,794843,2600514,5147684,5168337,5185104,5188617
+1163154,89470,0,0,4,4,4,2558
+1163154,89470,0,0,16,47,687,815526
+1163154,89470,11,13,437,11578,22324,4134331
+1163154,89470,794861,2601003,5147862,5168629,5185594,7702774
+Running experiment for throughput = 150000 req/s:
+['/dev/shm/agent_shinjuku', '--firstcpu', '11', '--globalcpu', '11', '--ncpus', '7', '--preemption_time_slice', '30us']
+['/dev/shm/rocksdb', '--print_format', 'csv', '--noprint_distribution', '', '--noprint_ns', '', '--print_get', '', '--print_range', '', '--rocksdb_db_path', '/dev/shm/orch_db', '--throughput', '20000', '--range_query_ratio', '0.005', '--load_generator_cpus', '10', '--cfs_dispatcher_cpus', '11', '--num_workers', '200', '--worker_cpus', '', '--cfs_wait_type', 'spin', '--ghost_wait_type', 'prio_table', '--get_duration', '10us', '--range_duration', '5000us', '--get_exponential_mean', '0us', '--batch', '1', '--experiment_duration', '15s', '--discard_duration', '2s', '--scheduler', 'ghost', '--ghost_qos', '2', '--throughput', '150000']
+RocksDB Stats:
+Get:
+904629,69582,1929960,4590171,6906637,6923743,6932437,6934026
+904629,69582,0,0,4,4,4,4631
+904629,69582,0,0,15,40,276,2609322
+904629,69582,11,12,258,407,1572,4531921
+904629,69582,1929973,4590198,6906672,6923800,6932477,9543791
+Range:
+4456,342,1930760,4585174,6898160,6921525,6932078,6933729
+4456,342,0,0,4,4,4,91
+4456,342,0,0,15,41,238,15697
+4456,342,5002,21407,393143,936991,4559860,7353851
+4456,342,1952456,4625089,6939375,6975250,9559109,11111063
+All:
+909085,69925,1929960,4590160,6906629,6923708,6932435,6934026
+909085,69925,0,0,4,4,4,4631
+909085,69925,0,0,15,40,276,2609322
+909085,69925,11,12,400,9609,32104,7353851
+909085,69925,1929973,4590235,6906698,6923973,6932502,11111063
